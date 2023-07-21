@@ -1,0 +1,151 @@
+css
+
+body{
+    background-color: white;
+}
+#container{
+    height: 600px;
+}
+
+#header{
+    height: 80px;
+    background: rgb(22,12,195);
+    background: linear-gradient(90deg, rgba(22,12,195,1) 0%, rgba(29,132,162,1) 100%);
+    width: 500%;
+    position: fixed;
+   
+}
+
+#header h2{
+    color: #000000;
+    font-family: Times New Roman;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+#header ul li{
+    display: inline;
+    margin-right: 30px;
+    
+}
+
+#header ul li a{
+    font-weight: 900;
+    color: rgb(192, 76, 202);
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+#banner{
+    padding-top: 100px;
+    background-image: url(image/homebanner.jpg);
+    height: 100vh;
+    background-size: cover;
+    padding-left: 50px;
+    justify-content: flex-start;
+}
+
+#banner #content{
+    position: absolute;
+    top: 50%;
+}
+
+#banner #content h1{
+    font-size: 40px;
+    padding-bottom: 5px;
+    color: rgba(0, 34, 226, 0.658);
+    font-family:'Times New Roman', Times, serif;
+}
+#banner #content h3{
+    font-size: 30px ;
+    padding-bottom: 5px;
+    color: rgb(0, 0, 5);
+}
+
+
+<div id="banner2">
+            <img src="img/banner2.jpg"/>
+            <div id="content1">
+                <h1>Cilton Yarns is one of the leading yarn trading company in India with head office in Karur</h1>
+                <div id="content2">
+                <h3>Cilton group started with a humble beginning in 2021 as a yarn trading company, however today it has grown up into multi-folds. We are trading all over india.
+
+                    Our products include Recycled fibers, OE yarn, Ring spun yarn, Vortex Yarn, Greige fabric & Knitted fabric which are manufactured with atmost</h3>
+                </div>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ring{
+    width: 200px;
+    height: 200px;
+    border: 0px solid #000;
+    border-radius: 50%;
+    position: absolute;
+}
+.ring:nth-child(1){
+    border-bottom-width: 8px;
+    border-color: rgb(255, 255, 255);
+    animation: rotate1 2s linear infinite;
+    -webkit-animation: rotate1 2s linear infinite;
+}
+.ring:nth-child(2){
+    border-right-width: 8px;
+    border-color: rgb(248, 95, 7);
+    animation: rotate2 2s linear infinite;
+    -webkit-animation: rotate2 2s linear infinite;
+}
+.ring:nth-child(3){
+    border-top-width: 8px;
+    border-color: rgb(18, 240, 40);
+    animation: rotate3 2s linear infinite;
+    -webkit-animation: rotate3 2s linear infinite;
+}
+.loading{
+    color: #2acaff;
+    font-family: 'Courier New', Courier, monospace;
+}
+@keyframes rotate1{
+    0%{
+        transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+}
+    100%{
+        transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+}
+}
+@keyframes rotate2{
+    0%{
+        transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+}
+    100%{
+        transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+}
+}
+@keyframes rotate3{
+    0%{
+        transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+}
+    100%{
+        transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+}
+}
